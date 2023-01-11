@@ -1,0 +1,332 @@
+body {
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html,body,#root {
+    height: 100%;
+    width: 100%;
+}
+
+/* DESKTOP */
+@media only screen and (min-width: 1400px) {
+
+    .wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        min-width: 1400px;
+        max-width: 1600px;
+        max-height: 1000px;
+        
+        width: 100%;
+
+        margin: auto;
+        margin-top: 40px;
+        padding: 2px 35px 20px 35px;
+        border: solid red 1px;
+        background-color: white;
+    }
+
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5px 15px 5px 15px;
+        height: 750px;
+        width: 100%;
+        border: solid red 1px;
+        background-color: rgb(234, 234, 215);
+    }
+
+    .button {
+        display: none;
+    }
+
+    .menu {
+        text-align: center;
+        height: 100%;
+        flex: 1;
+        border: solid red 1px;
+        background-color: white;
+    }
+
+    .device {
+        width: 450px;
+        min-width: 450px;
+        height: 100%;
+        margin: 0px 5px 0px 5px;
+        border: solid red 1px;
+        text-align: center;
+        background-color: rgb(128, 128, 165);
+    }
+
+    .steps {
+        text-align: center;
+        flex:1;
+        height:100%;
+        border: solid red 1px;
+        background-color: rgb(228, 196, 196);
+    }
+
+    .footnote {
+        background-color: white;
+        padding: 0px 20px 0px 20px;
+        margin-top: 5px;
+        width: 100%;
+        border: solid red 1px;
+    }
+}
+
+/* TABLET */
+@media only screen and (min-width: 1000px) and (max-width: 1399px) and (orientation : landscape)  {
+
+    .wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        min-width: 1000px;
+        max-width: 100%;
+        max-height: 1000px;
+        
+        width: 100%;
+
+        margin: auto;
+        margin-top: 40px;
+        padding: 2px 35px 20px 35px;
+        border: solid red 1px;
+        background-color: white;
+    }
+
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5px 15px 5px 15px;
+        height: 750px;
+        width: 100%;
+        border: solid red 1px;
+        background-color: rgb(234, 234, 215);
+    }
+
+    .button {
+        height: 100%;
+        width: 75px;
+        border: solid red 1px;
+        background-color: rgb(190, 245, 88);
+    }
+
+    .menu {
+        display: none;
+        position: absolute;
+        left: -100%;
+        text-align: center;
+        height: 100%;
+        width: 100%;
+        border: solid red 1px;
+        background-color: white;
+    }
+
+    .device {
+        width: 400px;
+        min-width: 400px;
+        height: 100%;
+        margin: 0px 5px 0px 5px;
+        border: solid red 1px;
+        text-align: center;
+        background-color: rgb(128, 128, 165);
+    }
+
+    .steps {
+        text-align: center;
+        height: 100%;
+        width: 100%;
+        border: solid red 1px;
+        background-color: rgb(228, 196, 196);
+    }
+
+    .footnote {
+        background-color: white;
+        padding: 0px 20px 0px 20px;
+        margin-top: 5px;
+        width: 100%;
+        border: solid red 1px;
+    }
+}   
+
+/* MOBILE PORTRAIT*/
+@media only screen and (max-width: 999px) and (orientation : portrait)  {
+
+    html {
+        overflow-y: hidden;
+    }
+
+    .wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        min-width: 350px;
+        min-height: 600px;  
+        width: 100%;
+        margin: auto;
+        margin-top: 10px;
+        padding: 2px 35px 20px 35px;
+        border: solid red 1px;
+        background-color: white;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 5px 0px 5px 0px;
+        width: 100%;
+        min-width: 350px;
+        border: solid red 1px;
+        background-color: rgb(234, 234, 215);
+    }
+
+    .button {
+        height: 40px;
+        width: 100%;
+        border: solid red 1px;
+        background-color: rgb(190, 245, 88);
+    }
+
+    .menu {
+        display: none;
+        position: absolute;
+        left: -100%;
+        text-align: center;
+        height: 100%;
+        width: 100%;
+        border: solid red 1px;
+        background-color: white;
+    }
+
+    .device {
+        width: 350px;
+        min-width: 350px;
+        min-height: 480px;
+        height: calc(100vh - 200px);
+        margin: 0px 5px 0px 5px;
+        border: solid red 1px;
+        text-align: center;
+        background-color: rgb(128, 128, 165);
+    }
+
+    .footnote {
+        background-color: white;
+        margin-top: 5px;
+        width: 100%;
+        border: solid red 1px;
+        font-size: 0.5em;
+    }
+
+    .steps {
+        position: absolute;
+        bottom: 0;  
+        height: 60px;
+        min-width: 350px;
+        width: 100%;
+        text-align: center;
+        border: solid red 1px;
+        background-color: rgb(228, 196, 196);
+    }
+}
+
+/* MOBILE LANDSCAPE*/
+@media only screen and (max-width: 999px) and (orientation : landscape)  {
+
+    html {
+        /* overflow-y: hidden; */
+    }
+
+    .wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        min-width: 350px;
+        min-height: 600px;  
+        width: 100%;
+        margin: auto;
+        margin-top: 10px;
+        padding: 2px 35px 20px 35px;
+        border: solid red 1px;
+        background-color: white;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 5px 0px 5px 0px;
+        min-width: 350px;
+        min-width: 100%;
+        border: solid red 1px;
+        background-color: rgb(234, 234, 215);
+    }
+
+    .button {
+        height: 40px;
+        width: 100%;
+        border: solid red 1px;
+        background-color: rgb(190, 245, 88);
+    }
+
+    .menu {
+        display: none;
+        position: absolute;
+        left: -100%;
+        text-align: center;
+        height: 100%;
+        width: 100%;
+        border: solid red 1px;
+        background-color: white;
+    }
+
+    .device {
+        width: 350px;
+        min-width: 350px;
+        min-height: 480px;
+        height: calc(100vh - 200px);
+        margin: 0px 5px 0px 5px;
+        border: solid red 1px;
+        text-align: center;
+        background-color: rgb(128, 128, 165);
+    }
+
+    .footnote {
+        background-color: white;
+        margin-top: 5px;
+        width: 100%;
+        border: solid red 1px;
+        font-size: 0.5em;
+    }
+
+    .steps {
+        position: absolute;
+        bottom: 0;  
+        height: 60px;
+        min-width: 350px;
+        width: 100%;
+        text-align: center;
+        border: solid red 1px;
+        background-color: rgb(228, 196, 196);
+    }
+
+}
+
